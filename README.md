@@ -83,6 +83,10 @@ flowchart TD
     X --> Y[Fallback Message with Buttons]
     Y --> C
 
+## Live Chatbot Link
+🔗 **Chatbot Demo / Live Link:**  
+👉 [https://inuit-shoes.zapier.app/](https://inuit-shoes.zapier.app)
+
 
 ## Conclusion
 This chatbot flow focuses on clarity, personalization, and guided navigation to improve customer engagement and conversion.
