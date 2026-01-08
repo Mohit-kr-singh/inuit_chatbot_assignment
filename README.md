@@ -57,5 +57,32 @@ If the bot does not understand user input, it responds politely and redirects us
 - Track Order
 - Contact Support
 
+flowchart TD
+    A[User visits Inuit Website] --> B[Welcome Message & Brand Intro]
+    B --> C{What does user want to do?}
+
+    C -->|Explore Shoes| D[Ask Shoe Type]
+    C -->|About Inuit| E[Show Brand Info]
+    C -->|Exit| Z[End Chat]
+
+    D --> F[Ask Shoe Size]
+    F --> G[Show How Inuit Shoes Are Made<br/>(Video Carousel)]
+
+    G --> H{Interested in buying?}
+    H -->|Yes| I[Ask for Home Delivery]
+    H -->|Explore More| D
+
+    I --> J[Collect Address & Payment Method]
+    J --> K[Order Confirmed]
+    K --> Z[Thank You & Exit]
+
+    %% Fallback
+    B --> X[User Enters Unknown Message]
+    D --> X
+    G --> X
+    X --> Y[Fallback Message with Buttons]
+    Y --> C
+
+
 ## Conclusion
 This chatbot flow focuses on clarity, personalization, and guided navigation to improve customer engagement and conversion.
